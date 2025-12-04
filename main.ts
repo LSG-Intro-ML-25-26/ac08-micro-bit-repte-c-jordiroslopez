@@ -2,6 +2,8 @@ let dice = 0
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber >= dice) {
         basic.showIcon(IconNames.Sad)
+    } else {
+        basic.showIcon(IconNames.Happy)
     }
 })
 input.onButtonPressed(Button.A, function () {
